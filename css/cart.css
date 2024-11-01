@@ -297,8 +297,12 @@ input:focus {
     display: flex;
     align-items: center;
     width: 100%;
-}
+    transition: 0.4s;
 
+}
+.intro-card:hover{
+    background-color: rgb(223, 215, 215);
+}
 .intro {
     display: flex;
     gap: 10px;

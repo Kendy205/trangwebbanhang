@@ -61,7 +61,7 @@ function updateCartCount() {
 }
 
 //count down
-const ful = new Date("october 31, 2024 23:00:00").getTime();
+const ful = new Date("november 3, 2024 23:00:00").getTime();
 setInterval(function() {
     var noW = new Date().getTime();
     var D = ful - noW;
