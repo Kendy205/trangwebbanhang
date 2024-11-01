@@ -510,17 +510,18 @@ nav ul li:hover{
     border-top: 1px solid lawngreen;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 .endproduct-card .now{
     width: 20%;
     margin-bottom: 10px;
+    margin-left: 20px;
+  
 }
 .endproduct-card .speed{
     flex: 1;
-    margin-bottom: 8px;
-    font-size: 8px;
+    margin-top: 8px;
+    font-size: 10px;
     font-weight: lighter;
 }
 /* danh gia ngoi sao */

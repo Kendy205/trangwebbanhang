@@ -510,7 +510,7 @@ nav ul li:hover{
 }
 .endproduct-card .speed{
     flex: 1;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 8px;
     font-weight: lighter;
 }
