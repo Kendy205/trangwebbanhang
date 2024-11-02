@@ -10,13 +10,15 @@ body {
     background-color: white;
     color: rgb(11, 10, 10);
     margin: 0 auto;
- 
+    width: 1400px;
     background-color: #f5f5fa;
-    
+    border: 10px solid rgb(251, 247, 247);
+
 }
 
 .body-box {
-    width: 1510px;
+    
+    width: 100%;
     margin: 0 auto;
 }
 /* header */
@@ -626,6 +628,7 @@ button.add-to-cart{
 footer {
     margin-top: 20px;
     background-color: #ffffff;
+    width: 1400px;
     border: none;
     border-radius: 10px;
     padding: 20px 0;
