@@ -133,5 +133,31 @@ window.onload = function() {
 };
 
 // Thay đổi số lượng
-document.getElementById('increase-quantity').addEventListener('click', () => changeQuantity(1));
-document.getElementById('decrease-quantity').addEventListener('click', () => changeQuantity(-1));
+
+document.addEventListener('DOMContentLoaded', function() {
+const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
+
+// Hàm xử lý tìm kiếm
+function handleSearch() {
+    
+    const query = searchInput.value.trim();console.log(query);  // Lấy giá trị đã nhập
+    if (query) {
+        // Chuyển hướng sang trang kết quả tìm kiếm với từ khóa trên URL
+        window.location.href = `ketquatimkiem.html?query=${encodeURIComponent(query)}`;
+    }
+}
+
+    // Xử lý khi nhấn nút "Tìm kiếm"
+    searchButton.addEventListener('click', handleSearch);
+
+    // Xử lý khi nhấn Enter trong thanh tìm kiếm
+    searchInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();  // Ngăn chặn hành động mặc định (nếu có)
+            handleSearch();
+        }
+    });
+
+
+});

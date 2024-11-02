@@ -26,15 +26,10 @@ header{
     width: 100%;
     display: inline-block;
     text-align: center;
+
+    box-shadow: 0 0 10px 2px linear-gradient(rgb(209, 209, 192),rgb(146, 146, 231));
     border-bottom: 1px solid lightblue;
-    background-color: white;
 }
-
-.header-box {
-    width: 1510px;
-    margin: 0 auto;
-}
-
 .top-bar{
     width: 100%;
     overflow: hidden;
@@ -49,7 +44,6 @@ header{
 
 }
 .logo img{
-    
     width: 100%;
     height: 100%;
    
@@ -85,18 +79,16 @@ input:focus {
     position: absolute;
     background-color: #3ca7ee;
     right: 2px;
-    top: 1px;
+    top: 0px;
     font-size: 18px;
     cursor: pointer;
     color:white;
-    border-radius: 6px;
+    border-radius: 3px;
     border: none;
     width: 100px;
-    height: 28px;
+    height: 30px;
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-    
 }
 .iconseach{
     position: absolute;
@@ -128,7 +120,6 @@ input:focus {
     
 }
 .acc{
-
     transition: 0.3s;
     display: flex;
     align-items: center;
@@ -137,11 +128,12 @@ input:focus {
 }
 .trangchu{
     transition: 0.3s;
-    padding: 15px;
-    font-size: 10px;
+    padding: 20px;
+    font-size: 15px;
     color: blue;
     display: inline-block;
     margin-right: 15px;
+    cursor: pointer;
 }
 .trangchu:hover{
     background-color:#e0ecff;
@@ -152,6 +144,9 @@ input:focus {
     transition: 0.3s;
     overflow: hidden;
     padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+
 }
 
 /* Gio Hang */
@@ -172,6 +167,7 @@ input:focus {
     position: absolute;
     top: 16px;
     left: 40%;
+    cursor: pointer;
 
 }
 /* end icon giohang */
@@ -182,13 +178,14 @@ input:focus {
     border-radius: 5px;
 }
 .account-button{
-    padding: 15px;
-    cursor: pointer;
+    padding: 20px;
     transition: 0.3s;
     display: inline-block;
     margin-right: 15px;
-    font-size: 10px;
+    font-size: 15px;
     position: relative;
+    cursor: pointer;
+ 
     
 }
 .account-button::before {
@@ -205,11 +202,7 @@ input:focus {
     border-radius: 5px;
 }
  /* thanh duoi */
-.thanhduoihead i{
-    text-align: center;
-    color: blue;
-   
-}
+
 .thanhduoihead{
     width: 100%;
     height: 30%;
@@ -218,12 +211,22 @@ input:focus {
     display: flex;
     align-items: center;
     text-align: left;
+    border-top: 1px solid lightblue;
+}
+.thanhduoihead i{
+    text-align: center;
+    color: blue;
+   
 }
 .thanhduoihead .check{
     padding-right: 60px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid gray;
 }
-.thanhduoihead .check:nth-child(1){
-    font-size: 16px;
+.thanhduoihead .check_1{
+    font-size: 14px;
+    text-transform: uppercase;
     font-weight: bolder;
     color: red;
 }

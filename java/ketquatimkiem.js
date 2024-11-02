@@ -37,7 +37,7 @@ fetch('../html/products.json')
         const filteredProducts = products.filter(product => 
             removeVietnameseDiacritics(product.name.toLowerCase()).includes(normalizedQuery)
         );
-
+        updateCartCount()
         // Hiển thị kết quả tìm kiếm
         const searchResults = document.getElementById('searchResults');
         if (filteredProducts.length > 0) {
@@ -110,12 +110,12 @@ function updateCartCount() {
         cartBadge.textContent = cartCount;
     }
 }
-
-document.addEventListener('DOMContentLoaded', function() {
+// Hàm xử lý tìm kiếm
+    document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
 
-    // Hàm xử lý tìm kiếm
+    
     function handleSearch() {
         const query = searchInput.value.trim();  // Lấy giá trị đã nhập
         if (query) {
