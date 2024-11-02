@@ -137,3 +137,17 @@ function updateCartCount() {
     });
 
 });
+// Tap đăng nhập
+const close=document.getElementById("close")
+const modal_over=document.querySelector('.modal_over')
+const modal_body=document.querySelector('.modal_body')
+close.addEventListener('click',function(e){
+    modal_over.classList.add('show')
+    modal_body.classList.add('show')
+})
+const login=document.getElementById("login")
+login.addEventListener('click',function (e) {
+    
+    modal_over.classList.remove('show')
+    modal_body.classList.remove('show')
+})
