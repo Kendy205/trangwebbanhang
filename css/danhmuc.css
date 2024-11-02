@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     background-color: white;
-    width: 1500px;
+    width: 1400px;
     color: rgb(11, 10, 10);
     margin: 0 auto;
     position: relative;
@@ -130,7 +130,7 @@ input:focus {
 }
 .trangchu{
     transition: 0.3s;
-    padding: 20px;
+    padding: 12px;
     font-size: 15px;
     color: blue;
     display: inline-block;
@@ -179,7 +179,7 @@ input:focus {
     border-radius: 5px;
 }
 .account-button{
-    padding: 20px;
+    padding: 12px;
     transition: 0.3s;
     display: inline-block;
     margin-right: 15px;
@@ -199,7 +199,7 @@ input:focus {
 }
 .account-button:hover{
     background-color:#e0ecff;
-    border-radius: 5px;
+    border-radius: 10px;
 }
  /* thanh duoi */
 .thanhduoihead i{

@@ -19,3 +19,7 @@ foodBtns.forEach((btn) => {
 		})
 	})
 })
+const bought=document.getElementById("bought");
+bought.addEventListener("click",event =>{
+	alert("Cảm ơn bạn đã mua hàng");
+})

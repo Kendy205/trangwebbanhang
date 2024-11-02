@@ -56,7 +56,7 @@ fetch('../html/products.json')
                             </a>        
                             <div class="shop">
                                 <div class="muangay">
-                                    <button>Mua Ngay</button>
+                                    <a href="sanpham.html?id=${product.id}"><button>Mua Ngay</button></a>
                                 </div>
                                 <div class="button-container">
                                   <button class="add-to-cart" data-name="${product.name}" data-price="${product.currentPrice}" data-image="${product.mainImage}">Thêm vào giỏ</button>  
