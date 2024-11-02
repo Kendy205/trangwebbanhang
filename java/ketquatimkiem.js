@@ -59,7 +59,7 @@ fetch('../html/products.json')
                                     <button>Mua Ngay</button>
                                 </div>
                                 <div class="button-container">
-                                  <button class="add-to-cart" data-name="${product.name}" data-price="${product.currentPrice}" data-image="${product.mainImage}">Thêm vào giỏ</button>
+                                  <button class="add-to-cart" data-name="${product.name}" data-price="${product.currentPrice}" data-image="${product.mainImage}">Thêm vào giỏ</button>  
                                 </div>
                             </div>
                             <div class="endproduct-card">
@@ -75,7 +75,8 @@ fetch('../html/products.json')
                 button.addEventListener('click', () => {
                     const product = {
                         name: button.dataset.name,
-                        price: parseInt(button.dataset.price)
+                        price: parseInt(button.dataset.price),
+                        image: button.dataset.image
                     };
                     addToCart(product); // Gọi hàm addToCart
                 });

@@ -1,6 +1,13 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  position: relative;
   padding: 0;
   background-color: #f5f5fa;
 }
@@ -533,12 +540,16 @@ input {
   border: 2px;
   text-align: center;
   background-color: red;
+  border: 1px solid blue;
   padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 .add-to-cart{
   border: none;
-  border: 2px solid blue;
+  border: 1px solid blue;
   border-radius: 10px;
   text-align: center;
   padding: 10px;
@@ -556,6 +567,10 @@ input {
   width: 100%;
   height: 100%;
 }
+.right img{
+  width: 100px;
+  height: 28px;
+}
 .anh{
   margin-top: 20px;
   display: flex;
@@ -567,14 +582,7 @@ input {
   border-radius: 10px;
 }
 /* modal */
-.modal{
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-}
+ /* modal 1 */
 .modal_over{
   position: fixed;
   width: 100%;
@@ -594,19 +602,46 @@ input {
   transition: 0.3s;
   background: linear-gradient(120deg, #3ca7ee, #dee1da);
   border-radius: 15px;
-overflow: hidden;
-
+  overflow: hidden;
 }
 .close{
   position: absolute;
   font-size: 25px;
   right: 4px;
+  z-index: 6;
   top:4px;
   cursor: pointer;
+}
+.close:hover{
+  color: red;
 }
 .show{
   display: none;
   transition: 0.3s;
+}
+ /* modal 2 */
+.modal_over1{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  transition: 0.3s;
+}
+.container{
+  display: inline-block;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  font-size: 10px;
+  z-index: 4;
+}
+.close-2{
+  position: absolute;
+  font-size: 20px;
+  right: 8px;
+  top: 3px;
 }
 /* footer */
 footer {

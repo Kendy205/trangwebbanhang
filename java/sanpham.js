@@ -158,6 +158,36 @@ function handleSearch() {
             handleSearch();
         }
     });
-
-
 });
+// Hàm lấy tham số query từ URL
+
+// Tap đăng nhập
+const close=document.getElementById("close")
+const modal_over=document.querySelector('.modal_over')
+const modal_body=document.querySelector('.modal_body')
+close.addEventListener('click',function(e){
+
+    modal_over.classList.add('show')
+    modal_body.classList.add('show')
+})
+const login=document.getElementById("login")
+login.addEventListener('click',function (e) {
+    console.log(e)
+    modal_over.classList.remove('show')
+    modal_body.classList.remove('show')
+})
+//Thanh toán
+const modal_over1=document.querySelector('.modal_over1');
+const close2=document.getElementById("close2");
+const container=document.querySelector('.container')
+const buy1=document.getElementById("muangay");
+buy1.addEventListener("click",function()
+{
+    modal_over1.classList.remove('show');
+    container.classList.remove('show');
+})
+close2.addEventListener('click',function(e){
+    console.log(e)
+    modal_over1.classList.add('show');
+    container.classList.add('show');
+})

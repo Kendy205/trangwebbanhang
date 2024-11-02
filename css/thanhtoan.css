@@ -1,19 +1,11 @@
 :root {
 	--primary-color: #0f9d58;
 }
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
 .food-menu button.active {
 	color: #fff;
 	background-color: var(--primary-color);
 }
 img {
-
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -21,13 +13,14 @@ img {
     transition: 0.5s;
 }
 
-.body {
+.modaliver{
 	display: flex;
     width: 300px;
     font-size: 10px;
 }
 
 .container {
+    position: relative;
 	border-radius: 20px;
 	padding: 20px;
 	background-color: #e2f3e2;
@@ -77,8 +70,7 @@ h1{
 }
 
 .food-item {
-
-	width: 35%;
+	width: 18%;
 	height: 200px;
 	margin: 10px;
 	border-radius: 20px;
@@ -130,6 +122,10 @@ h1{
 }
 input{
     outline: none;
+    height: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
     border: 1px solid rgb(103, 73, 73);
     border-radius: 5px;
 }

@@ -317,13 +317,23 @@ nav ul li:hover{
 }
 .quangcao{
     width: 49%;
-    display: flex;
+    display: inline-block;
     background-color: #f5f5fa;
     border-radius: 15px;
 }
+.quangcao h5{
+    margin-left: 5px;
+    text-align: left;
+    color: lightcoral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .quangcao .product-card{
     width: 40%;
+    clear: both;
     height: 280px;
+}
+.quangcaohang{
+    display: flex;
 }
 .slide{
     width: 49%;

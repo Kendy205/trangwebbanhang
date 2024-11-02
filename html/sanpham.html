@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/sanpham.css">
-    <link rel="stylesheet" href="../css/dangnhap.css">
+    <link rel="stylesheet" href="../css/thanhtoan.css">
+    <link rel="stylesheet" href="../css/dangnhap_2.css">
 </head>
 <body>
     <!-- modal -->
-    <div>
-        <div class="modal_over show"></div>
+    <div class="modal_over show">
         <div class="modal_body show">
             <i id="close" class="fas fa-window-close close"></i>
             <div class="container">
@@ -32,7 +32,53 @@
                 <div class="signup_link">Not a member? <a href="../html/dangki.html">Đăng kí</a></div>
                 </form>
             </div>
-            
+        </div>
+    </div>
+    <div class="modal_over1 show">
+        <div class="container show">
+            <i id="close2" class="fas fa-window-close close-2"></i>
+            <div class="food-menu">
+                    <h1>Hình thức thanh toán </h1>
+                <button class="active">Thanh toán khi nhận hàng </button>
+                <button type-food="momo">Momo</button>
+                <button type-food="meat">MB bank</button>
+                <button type-food="drinks">Viettel money</button>
+                
+            </div>
+            <div class="food-list">
+                <div class="food-item hide" type-food="momo">
+                    <img src="../images/momobank.jpg " alt="">
+                    
+                </div>
+                <div class="thongtin">
+                    Kính gửi Quý khách hàng,<br>
+                    Cảm ơn Quý khách đã tin tưởng và lựa chọn Toko market! Nếu cần hỗ trợ, vui lòng liên hệ với chúng tôi qua hehe@gmail.vn hoặc 099.
+                    <br>Trân trọng,<br>
+                    Toko
+                </div>
+                <div class="food-item hide" type-food="drinks">
+                    <img src="../images/viettelmoneybank.jpg" alt="">
+                </div>
+                <div class="food-item hide " type-food="meat">
+                    <img src="../images/mbbank.jpg" alt="">
+                </div>
+                <div class="food-item hide" type-food="dessert">
+                    <img src="dessert1.jpg" alt="">
+                </div>
+            </div>
+            <div class="thongtinnguoinhan">
+            <h1>Thông tin giao hàng</h1>
+                <label for="name">Họ tên:</label><br>
+                <input id="name" size="100" type="text" placeholder="Vui lòng nhập tên !"><br>
+                <label for="address">Địa chỉ giao hàng</label> <br>
+                <input type="text" size="100" id="address" placeholder="Vui lòng nhập địa chỉ !"><br>
+                <label for="num">Số điện thoại</label><br>
+                <input type="text" size="100" id="num" placeholder="Vui lòng nhập số điện thoại người nhận !">
+
+            </div>
+            <div class="mua">
+                <button> Mua Ngay</button>
+            </div>
         </div>
     </div>
     <!-- end modal -->
@@ -241,9 +287,9 @@
     <div class="col-3 col-s-12">
         <div class="right">
             <div class="seller-info">
-                <img src="../images/tiki.webp" class="tiki" alt="Tiki Trading">
+                <img src="../images/hehe2.png" class="Toko" alt="Toko Trading">
                 <div>
-                    <a href="#" class="seller-name">Tiki Trading</a>
+                    <a href="#" class="seller-name">Toko Trading</a>
                     <img src="../images/official.jpg" alt="Official">
                 </div>
                 <div>
@@ -268,7 +314,7 @@
             </div>
     
             <div class="buy-options">
-                <a href="#" class="buy1">Mua ngay</a>
+                <button id="muangay" class="buy1">Mua ngay</button>
                 <button class="add-to-cart">Thêm vào giỏ</button>
                 
             </div>
@@ -290,10 +336,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Về Tiki</h3>
+                <h3>Về Toko</h3>
                 <ul>
-                    <li>Giới thiệu Tiki</li>
-                    <li>Tiki Blog</a></li>
+                    <li>Giới thiệu Toko</li>
+                    <li>Toko Blog</a></li>
                     <li>Tuyển dụng</a></li>
                     <li>Chính sách bảo mật</a></li>
                     <li>Điều khoản sử dụng</a></li>
@@ -303,7 +349,7 @@
                 <h3>Hợp tác và liên kết</h3>
                 <ul>
                     <li>Quy chế hoạt động Sàn GDTMĐT</a></li>
-                    <li>Bán hàng cùng Tiki</a></li>
+                    <li>Bán hàng cùng Toko</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -317,7 +363,9 @@
         </div>
     </footer>
     <!--end footer -->
+    
     <script src="../java/dangnhap.js"></script>
+    <script src="../java/thanhtoan.js"></script>
     <script src="../java/sanpham.js"></script>  
 </body>
 </html>
